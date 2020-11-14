@@ -33,7 +33,6 @@ public class HttpServer {
         server.await();
     }
 
-
     /**
      * 在指定的端口等待HTTP请求，对其进行处理，返回响应
      */
@@ -55,10 +54,10 @@ public class HttpServer {
                 socket = serverSocket.accept();
                 input = socket.getInputStream();
                 output = socket.getOutputStream();
-
+                //解析请求
                 Request request = new Request(input);
                 request.parse();
-
+                //读取对应请求的文件数据，响应数据
                 Response response = new Response(output);
                 response.setRequest(request);
                 response.sendStaticResource();

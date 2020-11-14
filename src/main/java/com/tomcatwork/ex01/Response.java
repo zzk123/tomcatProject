@@ -31,7 +31,7 @@ public class Response {
     }
 
     /**
-     * 返回对应的文件数据
+     * 返回对应路径下的文件数据
      * @throws IOException
      */
     public void sendStaticResource() throws IOException{
