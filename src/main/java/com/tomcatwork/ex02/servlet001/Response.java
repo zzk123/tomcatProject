@@ -1,4 +1,4 @@
-package com.tomcatwork.ex02;
+package com.tomcatwork.ex02.servlet001;
 
 import javax.servlet.ServletOutputStream;
 import javax.servlet.ServletResponse;

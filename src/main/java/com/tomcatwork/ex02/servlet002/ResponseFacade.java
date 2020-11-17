@@ -1,4 +1,6 @@
-package com.tomcatwork.ex02;
+package com.tomcatwork.ex02.servlet002;
+
+import com.tomcatwork.ex02.servlet001.Response;
 
 import javax.servlet.ServletOutputStream;
 import javax.servlet.ServletResponse;
@@ -8,7 +10,7 @@ import java.util.Locale;
 
 /**
  * @program: testProject
- * @description:
+ * @description: Response外观类。防止被调用内部方法
  * @author: zzk
  * @create: 2020-07-01
  */

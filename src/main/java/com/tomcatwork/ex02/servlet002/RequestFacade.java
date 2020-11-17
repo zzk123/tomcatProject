@@ -1,4 +1,6 @@
-package com.tomcatwork.ex02;
+package com.tomcatwork.ex02.servlet002;
+
+import com.tomcatwork.ex02.servlet001.Request;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletInputStream;
@@ -12,7 +14,7 @@ import java.util.Map;
 
 /**
  * @program: testProject
- * @description:
+ * @description: 外观类，防止Request内部方法被调用
  * @author: zzk
  * @create: 2020-07-01
  */
