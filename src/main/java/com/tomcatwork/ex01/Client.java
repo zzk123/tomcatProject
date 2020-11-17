@@ -9,7 +9,7 @@ import java.net.Socket;
 
 /**
  * @ClassName Client
- * @Description 创建一个套接字，用于与本地HTTP服务进行通信（127.0.0.1表示本地主机），接收服务器的响应信息
+ * @Description 客户端：创建一个套接字，用于与本地HTTP服务进行通信（127.0.0.1表示本地主机），接收服务器的响应信息
  * @Author zzk
  * @Date 2020/11/14 23:50
  **/
