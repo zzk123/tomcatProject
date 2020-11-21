@@ -44,6 +44,9 @@ public class HttpConnector implements Runnable {
         }
     }
 
+    /**
+     * 启动应用程序
+     */
     public void start(){
         Thread thread = new Thread(this);
         thread.start();

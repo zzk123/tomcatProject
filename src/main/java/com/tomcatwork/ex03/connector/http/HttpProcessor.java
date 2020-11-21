@@ -60,7 +60,6 @@ public class HttpProcessor {
             parseRequest(input, output);
             parseHeaders(input);
 
-
             //根据请求的url来判断
             //ServletProcessor 会调用请求的servlet实例的service方法
             //StaticResourceProcessor会将请求的静态资源发送给客户端
