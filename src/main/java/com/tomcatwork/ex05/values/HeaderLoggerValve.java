@@ -15,7 +15,7 @@ import java.util.Enumeration;
 
 /**
  * @program: testProject
- * @description:
+ * @description: 阀，将请求头信息输出到控制台
  * @author: zzk
  * @create: 2020-08-06
  */

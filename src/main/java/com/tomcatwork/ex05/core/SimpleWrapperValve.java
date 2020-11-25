@@ -17,7 +17,7 @@ import java.io.IOException;
 
 /**
  * @program: testProject
- * @description:
+ * @description: 基本阀。专门处理对SimpleWrapper类的请求
  * @author: zzk
  * @create: 2020-08-05
  */

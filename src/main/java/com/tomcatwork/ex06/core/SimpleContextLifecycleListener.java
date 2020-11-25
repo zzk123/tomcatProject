@@ -6,7 +6,7 @@ import com.tomcatwork.apache.catalina.LifecycleListener;
 
 /**
  * @program: testProject
- * @description:
+ * @description: 事件触发监听器
  * @author: zzk
  * @create: 2020-08-21
  */

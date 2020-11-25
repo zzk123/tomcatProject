@@ -33,10 +33,14 @@ public class SimpleWrapper implements Wrapper, Pipeline {
     // the servlet instance
     private Servlet instance = null;
     private String servletClass;
+
+    // loader变量指明了载入servlet类要使用的载入器
     private Loader loader;
+    //表明了该Wrapper实例的父容器
+    protected Container parent = null;
     private String name;
     private SimplePipeline pipeline = new SimplePipeline(this);
-    protected Container parent = null;
+
 
     public SimpleWrapper() {
         pipeline.setBasic(new SimpleWrapperValve());
@@ -111,6 +115,7 @@ public class SimpleWrapper implements Wrapper, Pipeline {
         return null;
     }
 
+    //如果关联了一个载入器就返回该载入器，没有就返回父容器的载入器
     public Loader getLoader() {
         if (loader != null)
             return (loader);

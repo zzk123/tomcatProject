@@ -41,16 +41,17 @@ public class Bootstrap2 {
 
         ((Pipeline) context).addValve(valve1);
         ((Pipeline) context).addValve(valve2);
-
+        //创建映射器对象，将其添加到SimpleContext实例中。负责查找Context实例中的子容器来处理HTTP请求
         Mapper mapper = new SimpleContextMapper();
         mapper.setProtocol("http");
         context.addMapper(mapper);
 
         Loader loader = new SimpleLoader();
         context.setLoader(loader);
-
+        //为两个实例添加两种模式
         context.addServletMapping("/Primitive", "Primitive");
         context.addServletMapping("/Modern", "Modern");
+        //将Context与连接器相连，初始化连接器，调用其start()方法
         connector.setContainer(context);
         try {
             connector.initialize();
